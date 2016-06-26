@@ -1,0 +1,43 @@
+.button
+  padding: $padding
+  border: none
+  +border(rgba($black,0.1),2)
+  background: transparent
+  +hover-bg($white)
+  border-radius: 5px
+  margin-top: 20px
+  transition: .4s
+  &:hover
+    background: $black
+    color: $white
+
+  // color: $white
+  &-primary
+    color: $primary
+    +border($primary,2)
+    +hover-bg($white)
+    &:hover
+      background: $primary
+  &-secondary
+    color: $green
+    +border($green,2)
+    +hover-bg($white)
+    &:hover
+      background: $green
+  &-alert
+    color: $orange
+    +border($orange,2)
+    +hover-bg($white)
+    &:hover
+      background: $orange
+  &-warning
+    color: $red
+    +border($red,2)
+    +hover-bg($white)
+    &:hover
+      background: $red
+
+.box02
+  +size(90px)
+  +frame($orange)
+  color: white

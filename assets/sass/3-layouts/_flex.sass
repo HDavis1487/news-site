@@ -1,0 +1,73 @@
+.article
+  +display(flex)
+  flex-direction: column
+  flex: 1
+  padding: $padding
+  align-self: flex-end
+  figure
+    margin-bottom: 30px
+    flex: 1
+    img
+      align-content: center
+.main-article
+  flex: 2
+.story
+  +display(flex)
+  +align-items(center)
+  flex-wrap: wrap
+  h2
+    flex: 1
+    align-self: center
+    text-align: center
+.article-highlight
+  float: left
+.archive
+  +display(flex)
+  +align-items(center)
+  +align-content(center)
+  flex-basis: auto
+  flex-wrap: wrap
+  background: shade($white,1%)
+  padding: $padding
+  .title
+    align-self: space-between
+
+  figure
+    flex 1
+    max-width: 60%
+    img
+      max-width: 100%
+      height: auto
+      align-items: center
+
+.article-highlight p::after
+  content: ".."
+.article-highlight a::after
+  content: " >"
+
+.article-highlight a
+  +hover-text($black)
+  font-style: italic
+  font-size: 13px
+
+
+footer
+  +display(flex)
+  flex-direction: column
+  background: $black
+  padding: 50px
+  color: $white
+  justify-content: space-around
+  align-items: center
+
+.hero
+  +border($black,2)
+  border-top: none
+  border-left: none
+  border-right: none
+  img
+    max-width: 100%
+    height: auto
+  h5
+    clear: both
+    float: right

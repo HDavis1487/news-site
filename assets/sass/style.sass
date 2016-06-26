@@ -1,0 +1,32 @@
+//*************************
+// Imports
+@import '1-tools/tools'
+@import '2-modules/modules'
+@import '3-layouts/layouts'
+//*************************
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+body
+  background: $bg
+  color: tint($black,3%)
+  font-family: 'Clear Sans',sans-serif
+
+.wrapper
+  max-width: 960px
+  margin: 0 auto
+  +display(flex)
+  flex-direction: column
+  padding: $padding
+  background: #fff
+  +border($bg ,1)
+  border-top: none
+  border-bottom: none
+
+.btn-group
+  margin: 10px 0
+
+.hero
+  h2
+    float: right

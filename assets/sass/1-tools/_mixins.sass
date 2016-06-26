@@ -1,0 +1,22 @@
+@mixin border($color,$thickness)
+  border: $thickness + px solid rgba(shade($color,10%),0.6)
+  box-shadow: 0px 0px 3px rgba($color,0.2)
+  padding: 8px 11.5px 
+
+@mixin hover-text($color)
+  color: rgba($color,0.7)
+  transition: 0.4s
+  &:hover
+    color: ($color)
+
+@mixin hover-bg($bg)
+  background: rgba($bg,0.7)
+  transition: 0.2s
+  &:hover
+    background: ($bg)
+
+@mixin frame($color)
+  border: 3px solid rgba($color,0.4)
+  box-shadow: inset 1px 0px 5px rgba(black,0.4), 1px 0px 5px rgba(black,0.3)
+  background: shade($color,5%)
+  padding: 8px 11.5px

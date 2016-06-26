@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+  title Document
+  link(rel="stylesheet", href="css/style.css")
+body
+  header
+    .header-wrap
+      h2.site-title: a(href="#") News Site
+      
+      ul.nav
+        li: a(href="#") Home
+        li: a(href="#posts") Posts
+        li: a(href="#contact") Contact
+    
+      
+  .wrapper
+    .hero
+      img(src="assets/images/tim.jpg", alt="")
+      h2 <em>Make America Grate Cheese Again</em> 
+      <h5>Tim Calhoun 2016</h5>
+      //- h1 Hello
+    //- include includes/sample
+
+    //- .vid(style="margin-top:25px")
+    //-   <iframe width="560" height="315" src="https://www.youtube.com/embed/ZbM6WbUw7Bs" frameborder="0" allowfullscreen></iframe>
+    h1 News of the day
+    .story
+      .article.main-article
+        h2 Top Story
+        figure
+          img(src="//placehold.it/525x315", alt="")
+        h3 Article name
+        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem ipsum commodi unde cumque sint, dolore dicta. Eaque totam quidem voluptatum provident rem ratione error impedit saepe architecto asperiores animi sequi dolores reiciendis, sed officiis!
+      .article
+        figure
+          img(src="//placehold.it/325x315", alt="")
+        h3 Article name
+        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem ipsum commodi unde cumque sint, dolore dicta. Eaque
+      .article
+        figure
+          img(src="//placehold.it/425x215", alt="")
+        h3 Article name
+        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem ipsum commodi unde cumque sint, dolore dicta. Eaque
+    section
+      h2#posts Posts
+      .archive
+        .article.article-highlight
+          figure
+            img(src="//placehold.it/725x615", alt="")
+          h3.title Article name
+          p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam. Lorem ipsum dolor sit.
+          a(href="") Read More
+        .article.article-highlight
+          figure
+            img(src="//placehold.it/325x315", alt="")
+          h3.title Article name
+          p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam. Lorem ipsum dolor sit.
+          a(href="") Read More
+        .article.article-highlight
+          figure
+            img(src="//placehold.it/525x315", alt="")
+          h3.title Article name
+          p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam. Lorem  sit.
+          a(href="") Read More
+        .article.article-highlight
+          figure
+            img(src="//placehold.it/525x315", alt="")
+          h3.title Article name
+          p  Lorem consectetur adipisicing elit. Veniam. Lorem ipsum dolor sit.
+          a(href="") Read More
+          
+    include includes/contact
+    footer
+      h5 All Rights Reserved &copy; 2016
+      ul.nav
+        li: a(href="#") Home
+        li: a(href="#") Posts
+        li: a(href="#") Contact
+      
